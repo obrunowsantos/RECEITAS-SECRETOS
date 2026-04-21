@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recheios Secretos - 20 Receitas de Recheios Cremosos</title>
+    <meta name="description"
+        content="Aprenda a fazer recheios cremosos perfeitos para bolos, tortas e sobremesas. Receitas fáceis, rápidas e baratas com ingredientes simples.">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧁</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preload" as="image" href="images/recheio-chocolate.jpg">
+    <link rel="preload" as="image" href="images/recheio-leite-ninho.png">
+    <link rel="preload" as="image" href="images/recheio-morango.jpg">
+    <style>
+        /* ===== RESET & BASE ===== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #1a1a2e;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== DESIGN TOKENS ===== */
+        :root {
+            --orange-50: #fff7ed;
+            --orange-100: #ffedd5;
+            --orange-200: #fed7aa;
+            --orange-300: #fdba74;
+            --orange-400: #fb923c;
+            --orange-500: #f97316;
+            --orange-600: #ea580c;
+            --orange-700: #c2410c;
+            --amber-50: #fffbeb;
+            --amber-100: #fef3c7;
+            --amber-200: #fde68a;
+            --green-50: #f0fdf4;
+            --green-400: #4ade80;
+            --green-500: #22c55e;
+            --green-600: #16a34a;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+            --red-600: #dc2626;
+            --red-700: #b91c1c;
+            --white: #ffffff;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --radius-2xl: 1.25rem;
+            --radius-full: 9999px;
+        }
+
+        /* ===== BACKGROUND ===== */
+        .page-wrapper {
+            min-height: 100vh;
+            background: linear-gradient(180deg, var(--amber-50) 0%, var(--orange-50) 40%, var(--amber-50) 100%);
+        }
+
+        /* ===== UTILITY CLASSES ===== */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .container-lg {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 0 12px rgba(234, 88, 12, 0);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-6px);
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -200% center;
+            }
+
+            100% {
+                background-position: 200% center;
+            }
+        }
+
+        @keyframes countUp {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-400 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-500 {
+            animation-delay: 0.5s;
+        }
+
+        .delay-600 {
+            animation-delay: 0.6s;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            padding: 4rem 1rem 3rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: var(--gray-900);
+            margin-bottom: 1rem;
+            line-height: 1.15;
+            text-wrap: balance;
+        }
+
+        .hero .subtitle {
+            font-size: clamp(1.15rem, 3vw, 1.5rem);
+            color: var(--gray-700);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .hero .subtext {
+            font-size: 1.125rem;
+            color: var(--gray-600);
+            margin-bottom: 2.5rem;
+        }
+
+        /* ===== IMAGE CIRCLES ===== */
+        .image-circles {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .image-circle-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-circle {
+            width: 6rem;
+            height: 6rem;
+            border-radius: var(--radius-full);
+            overflow: hidden;
+            border: 4px solid var(--white);
+            box-shadow: var(--shadow-lg);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-circle:hover {
+            transform: scale(1.08);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .image-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .image-circle:hover img {
+            transform: scale(1.15);
+        }
+
+        .image-circle-label {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            margin-top: 0.5rem;
+            font-weight: 500;
+        }
+
+        @media (min-width: 640px) {
+            .image-circle {
+                width: 7rem;
+                height: 7rem;
+            }
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-family: inherit;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.2) 50%, transparent 70%);
+            background-size: 200% 100%;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover::after {
+            opacity: 1;
+            animation: shimmer 1.5s ease-in-out infinite;
+        }
+
+        .btn-primary {
+            background: var(--orange-500);
+            color: var(--white);
+            font-size: 1.2rem;
+            padding: 1.1rem 2.8rem;
+            border-radius: var(--radius-full);
+            box-shadow: var(--shadow-xl);
+            letter-spacing: 0.01em;
+        }
+
+        .btn-primary:hover {
+            background: var(--orange-600);
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+
+        .btn-cta {
+            width: 100%;
+            background: linear-gradient(135deg, var(--red-600), var(--red-700));
+            color: var(--white);
+            font-size: 1.25rem;
+            padding: 1.25rem 1.5rem;
+            border-radius: var(--radius-xl);
+            border: 4px solid var(--red-700);
+            box-shadow: var(--shadow-2xl), 0 0 0 0 rgba(220, 38, 38, 0.4);
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        .btn-cta:hover {
+            background: linear-gradient(135deg, var(--red-700), #991b1b);
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .btn-cta:active {
+            transform: scale(0.98);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, var(--green-500), var(--green-600));
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-whatsapp:hover {
+            background: linear-gradient(135deg, var(--green-600), #15803d);
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .btn-whatsapp svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        /* ===== CHECK LIST SECTION ===== */
+        .section-glass {
+            padding: 3rem 1rem;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: var(--radius-2xl);
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .check-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .check-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .check-icon {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            color: var(--orange-500);
+            margin-top: 0.15rem;
+        }
+
+        .check-item p {
+            font-size: 1.125rem;
+            color: var(--gray-800);
+        }
+
+        /* ===== "PERFEITO PARA" SECTION ===== */
+        .section-default {
+            padding: 3rem 1rem;
+        }
+
+        .card-gradient {
+            background: linear-gradient(135deg, var(--orange-100), var(--amber-100));
+            border-radius: var(--radius-2xl);
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-gradient h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 1.5rem;
+        }
+
+        .bullet-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .bullet-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.125rem;
+            color: var(--gray-700);
+        }
+
+        .bullet-list .bullet {
+            color: var(--orange-600);
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        /* ===== OFFER SECTION ===== */
+        .section-offer {
+            padding: 4rem 1rem;
+        }
+
+        .section-offer h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 3rem;
+        }
+
+        .offer-card {
+            background: var(--white);
+            border: 4px solid var(--orange-300);
+            border-radius: var(--radius-2xl);
+            padding: 2rem;
+            box-shadow: var(--shadow-2xl);
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .offer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--orange-400), var(--amber-200), var(--orange-400));
+        }
+
+        .offer-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .offer-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .offer-feature p {
+            font-size: 1.125rem;
+            color: var(--gray-800);
+        }
+
+        .offer-feature .highlight {
+            font-weight: 700;
+            color: var(--orange-600);
+        }
+
+        .price-box {
+            text-align: center;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, var(--orange-100), var(--amber-100));
+            border-radius: var(--radius-xl);
+            padding: 1.5rem;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--orange-600);
+            margin-bottom: 0.25rem;
+            animation: countUp 0.6s ease-out;
+            line-height: 1.2;
+        }
+
+        .price-label {
+            color: var(--gray-600);
+            font-size: 1.125rem;
+        }
+
+        /* ===== GUARANTEE SECTION ===== */
+        .guarantee-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--green-50);
+            border: 2px solid var(--green-400);
+            border-radius: var(--radius-full);
+            padding: 1rem 1.5rem;
+            box-shadow: var(--shadow-md);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .guarantee-badge svg {
+            width: 2rem;
+            height: 2rem;
+            color: var(--green-600);
+            flex-shrink: 0;
+        }
+
+        .guarantee-badge p {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--gray-800);
+            text-align: left;
+        }
+
+        /* ===== FAQ SECTION ===== */
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            overflow: hidden;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.25rem 0;
+            font-family: inherit;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            transition: color 0.2s;
+        }
+
+        .faq-question:hover {
+            color: var(--orange-600);
+        }
+
+        .faq-chevron {
+            width: 1.25rem;
+            height: 1.25rem;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            color: var(--gray-500);
+        }
+
+        .faq-item.open .faq-chevron {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.35s ease;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 200px;
+        }
+
+        .faq-answer p {
+            padding-bottom: 1.25rem;
+            color: var(--gray-700);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* ===== WHATSAPP SECTION ===== */
+        .section-whatsapp {
+            padding: 2rem 1rem;
+            background: var(--white);
+            border-top: 1px solid #e5e7eb;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            padding: 2rem 1rem;
+            background: var(--white);
+            border-top: 1px solid #e5e7eb;
+            text-align: center;
+        }
+
+        footer .verse {
+            font-size: 1rem;
+            color: var(--gray-700);
+            font-style: italic;
+            margin-bottom: 0.375rem;
+        }
+
+        footer .verse-ref {
+            font-size: 0.875rem;
+            color: var(--gray-500);
+            margin-bottom: 1rem;
+        }
+
+        footer .copyright {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+        }
+
+        /* ===== SCROLL REVEAL ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 480px) {
+            .image-circles {
+                gap: 1rem;
+            }
+
+            .image-circle {
+                width: 5rem;
+                height: 5rem;
+            }
+
+            .guarantee-badge {
+                flex-direction: column;
+                border-radius: var(--radius-xl);
+                text-align: center;
+            }
+
+            .guarantee-badge p {
+                text-align: center;
+            }
+        }
+
+        /* ==========================================
+       UPSELL POPUP
+       ========================================== */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            justify-content: center;
+            align-items: flex-start;
+            padding: 1.5rem;
+            overflow-y: auto;
+        }
+
+        .popup-overlay.active {
+            display: flex;
+        }
+
+        .popup-container {
+            background: var(--white);
+            border-radius: var(--radius-2xl);
+            max-width: 520px;
+            width: 100%;
+            border: 3px solid var(--orange-400);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            position: relative;
+            animation: popupSlideIn 0.4s ease-out;
+        }
+
+        @keyframes popupSlideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9) translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        /* --- Header --- */
+        .popup-header {
+            background: linear-gradient(135deg, #e53e3e, #f97316);
+            padding: 2rem 1.5rem 2.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.3);
+            border: none;
+            color: white;
+            font-size: 1.25rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+            z-index: 2;
+        }
+
+        .popup-close:hover {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .popup-emoji {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .popup-header h2 {
+            color: white;
+            font-size: 2.25rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .popup-header p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 1.15rem;
+            font-weight: 500;
+        }
+
+        /* --- Timer --- */
+        .popup-timer {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: rgba(120, 30, 0, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-xl);
+            padding: 0.6rem 1.5rem;
+            margin-top: 1.25rem;
+        }
+
+        .popup-timer svg {
+            width: 1.75rem;
+            height: 1.75rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .popup-timer-text {
+            text-align: left;
+        }
+
+        .popup-timer-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .popup-timer-clock {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: white;
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* --- Body --- */
+        .popup-body {
+            padding: 1.5rem;
+        }
+
+        /* --- Video embed --- */
+        .popup-video {
+            width: 65%;
+            margin: 0 auto 1.5rem;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            border: 3px solid var(--orange-300);
+            box-shadow: var(--shadow-lg);
+            background: #000;
+            position: relative;
+        }
+
+        .popup-video .vimeo-wrapper {
+            padding: 177.89% 0 0 0;
+            position: relative;
+        }
+
+        .popup-video .vimeo-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* --- Comparison --- */
+        .popup-imagine {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .popup-imagine h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            line-height: 1.5;
+        }
+
+        .popup-imagine h3 strong {
+            color: var(--orange-600);
+            font-size: 1.4rem;
+        }
+
+        .popup-per-recipe {
+            text-align: center;
+            font-size: 1rem;
+            color: var(--gray-700);
+            margin-bottom: 1.25rem;
+        }
+
+        .popup-per-recipe strong {
+            color: var(--gray-900);
+            font-weight: 700;
+        }
+
+        .popup-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .popup-plan {
+            border-radius: var(--radius-xl);
+            padding: 1.25rem 0.75rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .popup-plan-badge {
+            position: absolute;
+            top: -0.65rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.65rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.75rem;
+            border-radius: var(--radius-full);
+        }
+
+        .popup-plan.basic {
+            background: #f3f4f6;
+            border: 2px solid #d1d5db;
+        }
+
+        .popup-plan.basic .popup-plan-badge {
+            background: var(--gray-600);
+            color: white;
+        }
+
+        .popup-plan.basic .plan-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--gray-700);
+        }
+
+        .popup-plan.basic .plan-label {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+        }
+
+        .popup-plan.premium {
+            background: #fff7ed;
+            border: 3px solid var(--orange-400);
+        }
+
+        .popup-plan.premium .popup-plan-badge {
+            background: var(--red-600);
+            color: white;
+        }
+
+        .popup-plan.premium .plan-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--orange-600);
+        }
+
+        .popup-plan.premium .plan-label {
+            font-size: 0.9rem;
+            color: var(--orange-600);
+            font-weight: 600;
+        }
+
+        /* --- Price banner --- */
+        .popup-price-banner {
+            background: linear-gradient(135deg, #f97316, #e53e3e);
+            border-radius: var(--radius-xl);
+            padding: 1.5rem 1rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .popup-price-old {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            text-decoration: line-through;
+            margin-bottom: 0.25rem;
+        }
+
+        .popup-price-new {
+            color: white;
+            font-size: 3rem;
+            font-weight: 900;
+            line-height: 1.1;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .popup-price-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: var(--radius-full);
+            padding: 0.35rem 1rem;
+            margin-top: 0.75rem;
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* --- Benefits list --- */
+        .popup-benefits {
+            border: 2px solid #bbf7d0;
+            border-radius: var(--radius-xl);
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+            background: #f0fdf4;
+        }
+
+        .popup-benefits-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--gray-800);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .popup-benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+
+        .popup-benefit-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .popup-benefit-check {
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: 50%;
+            background: var(--orange-500);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .popup-benefit-check svg {
+            width: 1rem;
+            height: 1rem;
+            color: white;
+        }
+
+        .popup-benefit-text strong {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--gray-900);
+        }
+
+        .popup-benefit-text span {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+        }
+
+        /* --- CTA buttons --- */
+        .popup-btn-yes {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            padding: 1rem;
+            font-family: inherit;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: white;
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            border: none;
+            border-radius: var(--radius-xl);
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s;
+            text-decoration: none;
+            margin-bottom: 0.75rem;
+        }
+
+        .popup-btn-yes:hover {
+            background: linear-gradient(135deg, #16a34a, #15803d);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .popup-btn-no {
+            display: block;
+            width: 100%;
+            padding: 0.85rem;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--red-600);
+            background: white;
+            border: 2px solid var(--red-600);
+            border-radius: var(--radius-xl);
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .popup-btn-no:hover {
+            background: #fef2f2;
+        }
+
+        /* --- Popup responsive --- */
+        @media (max-width: 480px) {
+            .popup-container {
+                margin-top: 0.5rem;
+            }
+
+            .popup-header h2 {
+                font-size: 1.75rem;
+            }
+
+            .popup-video {
+                width: 75%;
+            }
+
+            .popup-price-new {
+                font-size: 2.5rem;
+            }
+
+            .popup-plan .plan-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+    <!-- Facebook Pixel -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0; t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1058788355816913');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1058788355816913&ev=PageView&noscript=1" alt="">
+    </noscript>
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="topo">
+            <div class="container-lg text-center">
+
+                <h1 class="animate-fade-in-up">Recheios simples que dão certo</h1>
+
+                <p class="subtitle animate-fade-in-up delay-100">
+                    Receitas fáceis, rápidas e baratas — acesso imediato
+                </p>
+
+                <p class="subtext animate-fade-in-up delay-200">
+                    Mesmo se você estiver começando agora
+                </p>
+
+                <!-- Imagens dos recheios -->
+                <div class="image-circles animate-fade-in-up delay-300">
+                    <div class="image-circle-item">
+                        <div class="image-circle">
+                            <img src="images/recheio-chocolate.jpg" alt="Recheio de chocolate cremoso" width="112"
+                                height="112" loading="eager">
+                        </div>
+                        <span class="image-circle-label">Chocolate</span>
+                    </div>
+
+                    <div class="image-circle-item">
+                        <div class="image-circle">
+                            <img src="images/recheio-leite-ninho.png" alt="Recheio de leite ninho" width="112"
+                                height="112" loading="eager">
+                        </div>
+                        <span class="image-circle-label">Leite Ninho</span>
+                    </div>
+
+                    <div class="image-circle-item">
+                        <div class="image-circle">
+                            <img src="images/recheio-morango.jpg" alt="Recheio de morango" width="112" height="112"
+                                loading="eager">
+                        </div>
+                        <span class="image-circle-label">Morango</span>
+                    </div>
+                </div>
+
+                <!-- CTA principal -->
+                <a href="#oferta" class="btn btn-primary animate-fade-in-up delay-400" id="btn-hero-cta">
+                    Quero minhas receitas agora!
+                </a>
+            </div>
+        </section>
+
+        <!-- ============ BENEFÍCIOS ============ -->
+        <section class="section-glass" id="beneficios">
+            <div class="container">
+                <div class="card reveal">
+                    <ul class="check-list">
+                        <li class="check-item">
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                            <p>Recheios com e sem fogo</p>
+                        </li>
+                        <li class="check-item">
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                            <p>Ingredientes comuns de mercado</p>
+                        </li>
+                        <li class="check-item">
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                            <p>Prontos em poucos minutos</p>
+                        </li>
+                        <li class="check-item">
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                            <p>Passo a passo fácil de seguir</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PERFEITO PARA ============ -->
+        <section class="section-default" id="para-quem">
+            <div class="container">
+                <div class="card-gradient reveal">
+                    <h2>Perfeito para:</h2>
+                    <ul class="bullet-list">
+                        <li><span class="bullet">•</span> bolos</li>
+                        <li><span class="bullet">•</span> bolo no pote</li>
+                        <li><span class="bullet">•</span> sobremesas</li>
+                        <li><span class="bullet">•</span> quem vende ou quer começar</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ OFERTA ============ -->
+        <section class="section-offer" id="oferta">
+            <div class="container text-center">
+
+                <h2 class="reveal">O que você recebe</h2>
+
+                <div class="offer-card reveal">
+                    <!-- Lista de itens -->
+                    <ul class="offer-features">
+                        <li class="offer-feature">
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                            <p>Acesso imediato ao Guia Recheios Secretos
+                                <span class="highlight">(20 receitas)</span>
+                            </p>
+                        </li>
+                        <li class="offer-feature">
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                            <p>Receitas simples e testadas</p>
+                        </li>
+                        <li class="offer-feature">
+                            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                            <p>Uso liberado para vender</p>
+                        </li>
+                    </ul>
+
+                    <!-- Preço -->
+                    <div class="price-box">
+                        <div class="price">R$ 1,99</div>
+                        <p class="price-label">pagamento único</p>
+                    </div>
+
+                    <!-- Botão de compra -->
+                    <!-- ⚠️ SUBSTITUA O # ABAIXO PELO SEU LINK DE PAGAMENTO (ex: Hotmart, Kiwify, Stripe) -->
+                    <a href="#" class="btn btn-cta" id="btn-comprar" onclick="handleBuy(event)">
+                        Garantir acesso agora
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============ GARANTIA ============ -->
+        <section class="section-default" id="garantia">
+            <div class="container text-center">
+                <div class="guarantee-badge reveal">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5
+                     4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17
+                     0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                    </svg>
+                    <p>Garantia de 7 dias. Se não gostar, devolvemos seu dinheiro.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FAQ ============ -->
+        <section class="section-glass" id="faq">
+            <div class="container">
+                <h2 class="text-center reveal"
+                    style="font-size:1.5rem; font-weight:700; color:var(--gray-900); margin-bottom:2rem;">
+                    Perguntas frequentes
+                </h2>
+
+                <div class="card reveal">
+                    <div class="faq-list">
+                        <div class="faq-item open">
+                            <button class="faq-question" aria-expanded="true" id="faq-btn-1">
+                                Recebo como?
+                                <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>No seu e-mail, logo após o pagamento ser confirmado.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" id="faq-btn-2">
+                                Serve para iniciantes?
+                                <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Sim. As receitas são simples e com passo a passo fácil.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" id="faq-btn-3">
+                                Posso vender?
+                                <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Sim. Você pode usar as receitas para vender suas sobremesas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ WHATSAPP ============ -->
+        <section class="section-whatsapp" id="contato">
+            <div class="container text-center">
+                <a href="https://wa.me/5587974009597?text=Ol%C3%A1%2C%20tenho%20d%C3%BAvidas%20sobre%20os%20Recheios%20Secretos%2C%20e%20preciso%20de%20Ajuda!"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="btn-whatsapp">
+                    <svg fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94
+                     1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059
+                     -.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371
+                     -.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01
+                     -.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198
+                     2.096 3.2 6.988 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719
+                     2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87
+                     9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0
+                     01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0
+                     012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05
+                     0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882
+                     11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                    </svg>
+                    Tirar dúvidas no WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <!-- ============ FOOTER ============ -->
+        <footer>
+            <p class="verse">"Jesus Cristo é o mesmo ontem, hoje e para sempre"</p>
+            <p class="verse-ref">Hebreus 13:8</p>
+            <p class="copyright">© 2025 Recheios Secretos. Todos os direitos reservados.</p>
+        </footer>
+
+    </div><!-- /.page-wrapper -->
+
+    <!-- ==========================================
+       UPSELL POPUP
+       ========================================== -->
+    <div class="popup-overlay" id="popup-upsell">
+        <div class="popup-container">
+
+            <!-- Header -->
+            <div class="popup-header">
+                <button class="popup-close" id="popup-close-btn" aria-label="Fechar">&times;</button>
+                <span class="popup-emoji">🤯</span>
+                <h2>ESPERA!</h2>
+                <p>Você está prestes a perder isso...</p>
+
+                <div class="popup-timer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                    <div class="popup-timer-text">
+                        <div class="popup-timer-label">Oferta expira em</div>
+                        <div class="popup-timer-clock" id="popup-countdown">07:00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Body -->
+            <div class="popup-body">
+
+                <!-- Video Vimeo -->
+                <div class="popup-video" id="popup-video-area">
+                    <div class="vimeo-wrapper">
+                        <iframe
+                            src="https://player.vimeo.com/video/1185236975?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" title="Plano premium - KF"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Imagine text -->
+                <div class="popup-imagine">
+                    <h3>Imagine ter acesso a <strong>250 receitas</strong> em vez de apenas 20...</h3>
+                </div>
+
+                <p class="popup-per-recipe">Por menos de <strong>R$ 0,03 por receita</strong></p>
+
+                <!-- Comparison cards -->
+                <div class="popup-comparison">
+                    <div class="popup-plan basic">
+                        <span class="popup-plan-badge">BÁSICO</span>
+                        <div class="plan-number">20</div>
+                        <div class="plan-label">receitas</div>
+                    </div>
+                    <div class="popup-plan premium">
+                        <span class="popup-plan-badge">PREMIUM</span>
+                        <div class="plan-number">+250</div>
+                        <div class="plan-label">receitas + bônus</div>
+                    </div>
+                </div>
+
+                <!-- Price banner -->
+                <div class="popup-price-banner">
+                    <div class="popup-price-old">De R$ 47,00</div>
+                    <div class="popup-price-new">R$ 7,99</div>
+                    <div class="popup-price-tag">🔥 Apenas nesta tela</div>
+                </div>
+
+                <!-- Benefits -->
+                <div class="popup-benefits">
+                    <div class="popup-benefits-title">🎁 Tudo que você vai receber:</div>
+
+                    <div class="popup-benefit-item">
+                        <div class="popup-benefit-check">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                        </div>
+                        <div class="popup-benefit-text">
+                            <strong>100 Receitas de Recheios Secretos</strong>
+                            <span>50 com fogo + 50 sem fogo</span>
+                        </div>
+                    </div>
+
+                    <div class="popup-benefit-item">
+                        <div class="popup-benefit-check">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                        </div>
+                        <div class="popup-benefit-text">
+                            <strong>50 Receitas de Lanches</strong>
+                            <span>Para variar seu cardápio</span>
+                        </div>
+                    </div>
+
+                    <div class="popup-benefit-item">
+                        <div class="popup-benefit-check">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                        </div>
+                        <div class="popup-benefit-text">
+                            <strong>50 Receitas de Sobremesas</strong>
+                            <span>Deixe seus clientes encantados</span>
+                        </div>
+                    </div>
+
+                    <div class="popup-benefit-item">
+                        <div class="popup-benefit-check">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                        </div>
+                        <div class="popup-benefit-text">
+                            <strong>20 Receitas de Caldas</strong>
+                            <span>Finalize suas criações</span>
+                        </div>
+                    </div>
+
+                    <div class="popup-benefit-item">
+                        <div class="popup-benefit-check">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                        </div>
+                        <div class="popup-benefit-text">
+                            <strong>20 Receitas de Tortas</strong>
+                            <span>Amplie suas vendas</span>
+                        </div>
+                    </div>
+
+                    <div class="popup-benefit-item">
+                        <div class="popup-benefit-check">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                        </div>
+                        <div class="popup-benefit-text">
+                            <strong>Suporte via WhatsApp</strong>
+                            <span>Tire dúvidas direto comigo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <!-- ⚠️ SUBSTITUA OS # ABAIXO PELOS SEUS LINKS DE PAGAMENTO -->
+                <a href="#" class="popup-btn-yes" id="btn-premium" onclick="handlePremium(event)">
+                    ✅ SIM! Quero +250 receitas por R$ 7,99
+                </a>
+
+                <a href="#" class="popup-btn-no" id="btn-basic" onclick="handleBasic(event)">
+                    Não, prefiro continuar só as receitas básicas por R$ 1,99
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // ---------- FAQ accordion ----------
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.closest('.faq-item');
+                const isOpen = item.classList.contains('open');
+
+                // Fecha todos
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
+
+                // Abre o clicado (toggle)
+                if (!isOpen) {
+                    item.classList.add('open');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        // ---------- Scroll reveal ----------
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // ---------- Buy button → open popup ----------
+        function handleBuy(e) {
+            e.preventDefault();
+
+            // Facebook Pixel
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout', {
+                    value: 1.99,
+                    currency: 'BRL',
+                    content_name: 'Guia Recheios Secretos'
+                });
+            }
+
+            // Abre o popup de upsell
+            openPopup();
+        }
+
+        // ---------- Popup controls ----------
+        const popupEl = document.getElementById('popup-upsell');
+        let countdownInterval = null;
+
+        function openPopup() {
+            popupEl.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            startCountdown(7, 0); // 7 minutos
+        }
+
+        function closePopup() {
+            popupEl.classList.remove('active');
+            document.body.style.overflow = '';
+            if (countdownInterval) clearInterval(countdownInterval);
+        }
+
+        // Fechar com botão X
+        document.getElementById('popup-close-btn').addEventListener('click', closePopup);
+
+        // Fechar clicando no overlay (fora do popup)
+        popupEl.addEventListener('click', (e) => {
+            if (e.target === popupEl) closePopup();
+        });
+
+        // Fechar com ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && popupEl.classList.contains('active')) closePopup();
+        });
+
+        // ---------- Countdown timer ----------
+        function startCountdown(minutes, seconds) {
+            let total = minutes * 60 + seconds;
+            const clockEl = document.getElementById('popup-countdown');
+
+            function update() {
+                const m = Math.floor(total / 60).toString().padStart(2, '0');
+                const s = (total % 60).toString().padStart(2, '0');
+                clockEl.textContent = m + ':' + s;
+
+                if (total <= 0) {
+                    clearInterval(countdownInterval);
+                    clockEl.textContent = '00:00';
+                }
+                total--;
+            }
+
+            update();
+            countdownInterval = setInterval(update, 1000);
+        }
+
+        // ---------- Premium button handler ----------
+        // ⚠️ SUBSTITUA PELO SEU LINK DE PAGAMENTO PREMIUM
+        function handlePremium(e) {
+            e.preventDefault();
+
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout', {
+                    value: 7.99,
+                    currency: 'BRL',
+                    content_name: 'Recheios Secretos Premium +250'
+                });
+            }
+
+            const premiumUrl = 'https://compraseguraonline.org.ua/c/2e85660cb3';
+
+            if (premiumUrl === '#') {
+                alert('Configure seu link de pagamento PREMIUM no código! Procure por "premiumUrl".');
+                return;
+            }
+
+            window.open(premiumUrl, '_blank');
+        }
+
+        // ---------- Basic button handler ----------
+        // ⚠️ SUBSTITUA PELO SEU LINK DE PAGAMENTO BÁSICO
+        function handleBasic(e) {
+            e.preventDefault();
+
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout', {
+                    value: 1.99,
+                    currency: 'BRL',
+                    content_name: 'Guia Recheios Secretos Básico'
+                });
+            }
+
+            const basicUrl = 'https://compraseguraonline.org.ua/c/c63c45cdc1';
+
+            if (basicUrl === '#') {
+                alert('Configure seu link de pagamento BÁSICO no código! Procure por "basicUrl".');
+                return;
+            }
+
+            window.open(basicUrl, '_blank');
+        }
+
+        // ---------- Hero CTA scroll ----------
+        document.getElementById('btn-hero-cta').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.getElementById('oferta').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+
+</html>
